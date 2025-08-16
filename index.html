@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>MATCH on GitHub</title>
+<title>Matching PFP Generator</title>
 <style>
   body { background:#0d1117; color:#ffffff; font-family: Arial, sans-serif; padding:20px; }
   label { display:block; margin-top:10px; }
@@ -12,12 +12,22 @@
 <script src="matching-pfp.js"></script>
 </head>
 <body>
-<h2>MATCH [ github.com/typescriptlang/Match ]</h2>
+<h2>Matching PFP Maker</h2>
 
+<!-- File upload -->
+<label>Upload Image or GIF:</label>
 <input type="file" id="upload" accept="image/*">
+
+<!-- Circular crop toggle -->
 <label><input type="checkbox" id="circular"> Circular</label>
+
+<!-- Zoom slider -->
 <label>Zoom: <input type="range" id="zoom" min="0.5" max="1.5" step="0.01" value="1"></label>
 
+<!-- Generate button -->
+<button id="generate">Generate Split</button>
+
+<!-- Output container -->
 <div id="output"></div>
 </body>
 </html>
